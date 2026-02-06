@@ -44,10 +44,29 @@ ocfl pets --type dog
 - **Booking PDF Check** — Verifies daily inmate booking list availability
 - **Permit Database** — Offline reference for fence, pool, roof, ADU, garage sale, tree permits
 
+### ✅ Telegram Wizard
+Interactive button-driven interface for Telegram:
+
+```python
+# Start the wizard
+python3 wizard.py start
+
+# Handle button callbacks
+python3 wizard.py callback "ocfl:pets:ready"
+
+# Handle text input
+python3 wizard.py input "1321 Apopka Airport Rd"
+```
+
+**Wizard Flows:**
+- 🏠 Property → geocode address, get parcel links
+- 🐕 Pets → browse dogs/cats, see ready-to-adopt
+- 📋 Permits → fence, pool, roof, ADU, garage sale, tree
+- 👮 Inmate → bookings PDF, first appearances
+
 ### 🔜 Coming Soon
 - Direct parcel data from Property Appraiser API
-- Inmate search scraping
-- Telegram wizard integration
+- Inmate name search scraping
 
 ## Data Sources
 
